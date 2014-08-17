@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -482,8 +483,118 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
 /*
 contributors :
   - @simonbernard90
 */
-/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sources%22%3A%5B%22libs%2Fnormalize-css%2Fnormalize.css%22%2C%22libs%2Freset-css%2Freset.css%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22%3B%3B%3B%3B%3B%3BAAQK%3BEACH%2CuBAAA%3B%3BEACA%2C0BAAA%3B%3BEACA%2C8BAAA%3B%3B%3B%3B%3B%3BAAOG%3BEACH%2CSAAA%3B%3B%3B%3B%3B%3B%3B%3B%3BAAYK%3BAACF%3BAACE%3BAACG%3BAACJ%3BAACA%3BAACA%3BAACA%3BAACF%3BAACD%3BAACI%3BAACC%3BEACN%2CcAAA%3B%3B%3B%3B%3B%3BAAQG%3BAACC%3BAACE%3BAACF%3BEACJ%2CqBAAA%3B%3BEACA%2CwBAAA%3B%3B%3B%3B%3B%3B%3BAAQG%2CKAAI%2CIAAa%3BEACpB%2CaAAA%3BEACA%2CSAAA%3B%3B%3B%3B%3B%3BAAQM%3BAACC%3BEACP%2CaAAA%3B%3B%3B%3B%3B%3B%3BAAUA%3BEACA%2CuBAAA%3B%3B%3B%3B%3BAAOD%2CCAAO%3BAACP%2CCAAO%3BEACN%2CUAAA%3B%3B%3B%3B%3B%3B%3BAAUE%2CIAAQ%3BEACV%2CyBAAA%3B%3B%3B%3B%3BAAOD%3BAACM%3BEACL%2CiBAAA%3B%3B%3B%3B%3BAAOE%3BEACF%2CkBAAA%3B%3B%3B%3B%3B%3BAAQC%3BEACD%2CcAAA%3BEACA%2CgBAAA%3B%3B%3B%3B%3BAAOG%3BEACH%2CgBAAA%3BEACA%2CWAAA%3B%3B%3B%3B%3BAAOI%3BEACJ%2CcAAA%3B%3B%3B%3B%3BAAOC%3BAACC%3BEACF%2CcAAA%3BEACA%2CcAAA%3BEACA%2CkBAAA%3BEACA%2CwBAAA%3B%3BAAGE%3BEACF%2CWAAA%3B%3BAAGE%3BEACF%2CeAAA%3B%3B%3B%3B%3B%3B%3BAAUE%3BEACF%2CSAAA%3B%3B%3B%3B%3BAAOC%2CGAAI%2CIAAQ%3BEACb%2CgBAAA%3B%3B%3B%3B%3B%3B%3BAAUK%3BEACL%2CgBAAA%3B%3B%3B%3B%3BAAOC%3BEACD%2C4BAAA%3BEACA%2CuBAAA%3BEACA%2CSAAA%3B%3B%3B%3B%3BAAOE%3BEACF%2CcAAA%3B%3B%3B%3B%3BAAOE%3BAACD%3BAACA%3BAACE%3BEACH%2CiCAAA%3BEACA%2CcAAA%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3BAAkBI%3BAACD%3BAACG%3BAACF%3BAACG%3BEACP%2CcAAA%3B%3BEACA%2CaAAA%3B%3BEACA%2CSAAA%3B%3B%3B%3B%3B%3BAAOK%3BEACL%2CiBAAA%3B%3B%3B%3B%3B%3B%3B%3BAAUI%3BAACC%3BEACL%2CoBAAA%3B%3B%3B%3B%3B%3B%3B%3B%3BAAWI%3BAACD%2CIAAK%2CMAAe%3BAACpB%2CKAAc%3BAACd%2CKAAgB%3BEACnB%2C0BAAA%3B%3BEACA%2CeAAA%3B%3B%3B%3B%3B%3BAAOI%2CMAAU%3BAACX%2CIAAK%2CMAAW%3BEACnB%2CeAAA%3B%3B%3B%3B%3BAAOI%2CMAAkB%3BAACnB%2CKAAmB%3BEACtB%2CSAAA%3BEACA%2CUAAA%3B%3B%3B%3B%3B%3BAAQI%3BEACJ%2CmBAAA%3B%3B%3B%3B%3B%3B%3B%3B%3BAAWG%2CKAAiB%3BAACjB%2CKAAe%3BEAClB%2CsBAAA%3B%3BEACA%2CUAAA%3B%3B%3B%3B%3B%3B%3B%3BAASG%2CKAAe%2CeAA2B%3BAAC1C%2CKAAe%2CeAA4B%3BEAC9C%2CYAAA%3B%3B%3B%3B%3B%3B%3BAASG%2CKAAgB%3BEACnB%2C6BAAA%3B%3BEACA%2C4BAAA%3BEACA%2C%2BBAAA%3B%3BEACA%2CuBAAA%3B%3B%3B%3B%3B%3B%3BAASG%2CKAAe%2CeAA8B%3BAAC7C%2CKAAe%2CeAA4B%3BEAC9C%2CwBAAA%3B%3B%3B%3B%3BAAOO%3BEACP%2CyBAAA%3BEACA%2CaAAA%3BEACA%2C8BAAA%3B%3B%3B%3B%3B%3BAAQK%3BEACL%2CSAAA%3B%3BEACA%2CUAAA%3B%3B%3B%3B%3B%3BAAOO%3BEACP%2CcAAA%3B%3B%3B%3B%3B%3BAAQO%3BEACP%2CiBAAA%3B%3B%3B%3B%3B%3B%3BAAUI%3BEACJ%2CyBAAA%3BEACA%2CiBAAA%3B%3BAAGA%3BAACC%3BEACD%2CUAAA%3B%3B%3B%3B%3B%3BAClaE%3BAAAM%3BAAAK%3BAAAM%3BAAAQ%3BAAAQ%3BAAAQ%3BAAC3C%3BAAAI%3BAAAI%3BAAAI%3BAAAI%3BAAAI%3BAAAG%3BAAAY%3BAAAK%3BAACzC%3BAAAM%3BAAAS%3BAAAS%3BAAAK%3BAAAM%3BAAAM%3BAACvC%3BAAAK%3BAAAI%3BAAAK%3BAAAK%3BAAAK%3BAAAG%3BAAAG%3BAAAM%3BAAClC%3BAAAQ%3BAAAQ%3BAAAK%3BAAAK%3BAAAI%3BAAAK%3BAACvC%3BAAAG%3BAAAG%3BAAAQ%3BAACb%3BAAAI%3BAAAI%3BAAAI%3BAAAI%3BAAAI%3BAACd%3BAAAM%3BAAAO%3BAAAQ%3BAACxB%3BAAAS%3BAAAO%3BAAAO%3BAAAO%3BAAAI%3BAAAI%3BAAAI%3BAACxC%3BAAAO%3BAAAQ%3BAAAS%3BAAAO%3BAAChC%3BAAAY%3BAAAQ%3BAAAQ%3BAAAQ%3BAACtC%3BAAAK%3BAAAQ%3BAAAM%3BAAAS%3BAAAS%3BAACrC%3BAAAM%3BAAAO%3BAAAQ%3BEACxB%2CSAAA%3BEACA%2CUAAA%3BEACA%2CSAAA%3BEACA%2CeAAA%3BEACA%2CaAAA%3BEACA%2CwBAAA%3B%3B%3BAAGM%3BAAAO%3BAAAS%3BAAAY%3BAAAQ%3BAACrC%3BAAAQ%3BAAAQ%3BAAAM%3BAAAK%3BAAAU%3BEAC1C%2CcAAA%3B%3BAAEI%3BEACJ%2CcAAA%3B%3BAAEC%3BAAAK%3BEACN%2CgBAAA%3B%3BAAES%3BAAAI%3BEACb%2CYAAA%3B%3BAAES%2CUAAO%3BAAAY%2CUAAM%3BAAClC%2CCAAO%3BAAAG%2CCAAO%3BEACjB%2CSAAS%2CEAAT%3BEACA%2CaAAA%3B%3BAAEK%3BEACL%2CyBAAA%3BEACA%2CiBAAA%22%7D */
+.athlete.list-item {
+  width: 20%;
+  height: 100%;
+}
+.athlete.list-item > .pict-wrapper {
+  width: 100%;
+  height: 40%;
+  position: relative;
+  padding: 0 10%;
+  box-sizing: border-box;
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+.athlete.list-item > .pict-wrapper > figure {
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  top: 60%;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+}
+.athlete.list-item > .pict-wrapper > figure > img {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 -1px 1px #000000;
+}
+.athlete.list-item > .details {
+  width: 100%;
+  height: 20%;
+  background: #ffffff;
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  box-shadow: inset 0 1px 1px #000000;
+}
+.athlete.list-item > .details > h3 {
+  text-transform: capitalize;
+}
+.athlete.list-item.active > .pict-wrapper {
+  width: 100%;
+  height: 30%;
+}
+.athlete.list-item.active > .pict-wrapper > figure {
+  top: 40%;
+}
+.athlete.list-item.active > .details {
+  width: 100%;
+  height: 50%;
+}
+body {
+  background: url('../res/usain-bolt.jpg') no-repeat top center fixed;
+}
+main {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+main > #athlete-list {
+  width: 100%;
+  height: 100%;
+}
+main > #athlete-list > * {
+  background: rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  vertical-align: top;
+}
+@media only screen and (min-width: 641px) and (max-width: 1180px) {
+  .athlete.list-item {
+    width: 100%;
+    height: 11rem;
+    background: #ffffff;
+    box-shadow: inset 0 -1px 1px #000000;
+  }
+  .athlete.list-item > .pict-wrapper,
+  .athlete.list-item > .details {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .athlete.list-item > .pict-wrapper {
+    width: 11rem;
+    height: 11rem;
+    padding: 30px;
+    background: transparent;
+  }
+  .athlete.list-item > .pict-wrapper > figure {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+  .athlete.list-item > .details {
+    width: auto;
+    height: auto;
+    box-shadow: none;
+  }
+}
+/*# sourceMappingURL=style/main.min.css.map */
