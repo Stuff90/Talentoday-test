@@ -1,3 +1,8 @@
+/*
+contributors :
+  - @simonbernard90
+*/
+
 'use strict';
 
 define([], function () {

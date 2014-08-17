@@ -1,11 +1,16 @@
+/*
+contributors :
+  - @simonbernard90
+*/
+
 'use strict';
 
 require.config({
 	paths: {
-		angular: '../bower_components/angular/angular',
-		angularRoute: '../bower_components/angular-route/angular-route',
-		angularMocks: '../bower_components/angular-mocks/angular-mocks',
-		text: '../bower_components/requirejs-text/text'
+		angular: '../../libs/angular/angular',
+		angularRoute: '../../libs/angular-route/angular-route',
+		angularMocks: '../../libs/angular-mocks/angular-mocks',
+		text: '../../libs/requirejs-text/text'
 	},
 	shim: {
 		'angular' : {'exports' : 'angular'},
