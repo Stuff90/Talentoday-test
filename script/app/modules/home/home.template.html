@@ -1,3 +1,12 @@
-<ul>
-	<li ng-repeat="item in items" ng-click="open(item)">{{item.firstname}} {{item.lastname}}</li>
-</ul>
+<section id="athlete-list">
+	<div ng-repeat="item in items" ng-click="open(item)" class="athlete list-item" ng-class="{active:item.id == activeClass}">
+		<div class="pict-wrapper">
+			<figure><img src="res/{{item.firstname}}-{{item.lastname}}.png" alt="Athlete pict"></figure>
+		</div>
+		<div class="details">
+			<h3>{{item.firstname}} {{item.lastname}}</h3>
+			<address>{{item.address}}</address>
+			<time>{{item.birthdate}}</time>
+		</div>
+	</div>
+</section>

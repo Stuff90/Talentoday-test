@@ -13,36 +13,44 @@ define([], function () {
 
 		athlete.all = [{
 				id:1,
-				firstname:'Usain',
-				lastname:'Bolt',
+				firstname:'usain',
+				lastname:'bolt',
 				birthdate:'2014-1-1',
 				address:'Park avenue',
 				phone:'000-0000-000',
 				description:'Usain Bolt'
 			},{
 				id:2,
-				firstname:'Yohan',
-				lastname:'Blake',
+				firstname:'yohan',
+				lastname:'blake',
 				birthdate:'2014-1-1',
 				address:'Park avenue',
 				phone:'000-0000-000',
 				description:'Yohan Blake'
 			},{
 				id:3,
-				firstname:'Asafa',
-				lastname:'Powell',
+				firstname:'asafa',
+				lastname:'powell',
 				birthdate:'2014-1-1',
 				address:'Park avenue',
 				phone:'000-0000-000',
 				description:'Asafa Powell'
 			},{
 				id:4,
-				firstname:'Nesta',
-				lastname:'Carter',
+				firstname:'nesta',
+				lastname:'carter',
 				birthdate:'2014-1-1',
 				address:'Park avenue',
 				phone:'000-0000-000',
 				description:'Nesta Carter'
+			},{
+				id:5,
+				firstname:'sherone',
+				lastname:'simpson',
+				birthdate:'2014-1-1',
+				address:'Park avenue',
+				phone:'000-0000-000',
+				description:'Sherone Simpson'
 			}
 		];
 

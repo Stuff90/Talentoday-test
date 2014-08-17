@@ -15,6 +15,8 @@ define(['angular', 'services/athlete.service'], function (angular, i) {
 			
 			$scope.open = function(item){
 				console.log(item);
+				$scope.selectedClass = $scope.items;
+    			$scope.activeClass 	 = item.id;
 			};
 
 
