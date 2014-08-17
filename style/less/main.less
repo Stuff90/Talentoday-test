@@ -4,16 +4,22 @@
 @import (less) "../../libs/reset-css/reset.css";
 
 // Basics
+@import "mixins/mixins.less";
+
 @import "conf.less";
 @import "vars.less";
 
+// Partials
+
 @import "partials/athlete.less";
 
-// @import "mixins/mixins.less";
 // @import "partials/partials.less";
 
 
+@import "elements/home.less";
 
 @media @desktop {}
-@media @tablet {}
+@media @tablet {
+	@import "tablet/athlete.tablet.less";
+}
 @media @mobile {}

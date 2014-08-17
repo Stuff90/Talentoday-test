@@ -1,0 +1,26 @@
+.athlete {
+	&.details {}
+	&.list-item {
+		.size(100%,11rem);
+        background:@white;
+	    box-shadow: inset 0 -1px 1px @black;
+        > .pict-wrapper, > .details {
+            display:inline-block;
+            vertical-align:top;
+        }
+        > .pict-wrapper {
+            .size(11rem,11rem);
+            padding:30px;
+            background:transparent;
+            > figure {
+                top:0;
+                .size();
+                padding:0;
+    		}
+    	}
+    	> .details {
+    		.size(auto,auto);
+            box-shadow:none;
+    	}
+	}
+}
