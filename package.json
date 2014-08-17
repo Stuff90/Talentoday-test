@@ -1,0 +1,20 @@
+{
+	"name": "TestTalentoday",
+	"version": "0.0.1",
+	"description": "technica Test Talentoday",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/tnajdek/angular-requirejs-seed.git"
+	},
+	"license": "MIT",
+	"author": "@simonbernard90",
+	"readmeFilename": "README.md",
+	"dependencies": {
+		"bower": "latest",
+		"grunt-cli": "latest",
+		"grunt": "~0.4.1",
+		"grunt-contrib-less": "~0.8.3",
+		"grunt-contrib-watch": "~0.5.3",
+    	"load-grunt-tasks": "~0.2.0"
+	}
+}
