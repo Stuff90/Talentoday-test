@@ -489,6 +489,9 @@ html {
   height: 100%;
   font-family: 'Lato', sans-serif;
 }
+* {
+  box-sizing: border-box;
+}
 /*
 contributors :
   - @simonbernard90
@@ -501,8 +504,6 @@ contributors :
   width: 100%;
   height: 40%;
   position: relative;
-  padding: 0 10%;
-  box-sizing: border-box;
   -webkit-transition: all 500ms ease-out;
   -moz-transition: all 500ms ease-out;
   -o-transition: all 500ms ease-out;
@@ -513,42 +514,83 @@ contributors :
   -moz-transition: all 500ms ease-out;
   -o-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
-  top: 60%;
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 100%;
+  z-index: 1;
+  position: absolute;
+  max-width: 200px;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: -20%;
 }
 .athlete.list-item > .pict-wrapper > figure > img {
+  max-height: 200px;
   width: 100%;
   height: 100%;
   background: #ffffff;
   border-radius: 50%;
   box-shadow: 0 -1px 1px #000000;
 }
-.athlete.list-item > .details {
+.athlete.list-item > .details-wrapper {
   width: 100%;
   height: 20%;
-  background: #ffffff;
   -webkit-transition: all 500ms ease-out;
   -moz-transition: all 500ms ease-out;
   -o-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
+  background: #ffffff;
+  position: relative;
   box-shadow: inset 0 1px 1px #000000;
 }
-.athlete.list-item > .details > h3 {
+.athlete.list-item > .details-wrapper > * {
+  opacity: 0;
+  -webkit-transition: all 500ms 100ms ease-in;
+  -moz-transition: all 500ms 100ms ease-in;
+  -o-transition: all 500ms 100ms ease-in;
+  transition: all 500ms 100ms ease-in;
+}
+.athlete.list-item > .details-wrapper > h3 {
+  -webkit-transition: all 400ms ease-in;
+  -moz-transition: all 400ms ease-in;
+  -o-transition: all 400ms ease-in;
+  transition: all 400ms ease-in;
+  opacity: 1;
   text-transform: capitalize;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  font-size: 25px;
+  width: 100%;
+  height: auto;
+}
+.athlete.list-item > .details-wrapper > .details {
+  top: 25%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10% 10% 10% 10%;
+}
+.athlete.list-item > .details-wrapper > .details > * {
+  font-size: 18px;
+  line-height: 20px;
+  padding: 10px 0;
 }
 .athlete.list-item.active > .pict-wrapper {
   width: 100%;
   height: 30%;
 }
-.athlete.list-item.active > .pict-wrapper > figure {
-  top: 40%;
-}
-.athlete.list-item.active > .details {
+.athlete.list-item.active > .details-wrapper {
   width: 100%;
   height: 50%;
+}
+.athlete.list-item.active > .details-wrapper > h3 {
+  top: 17%;
+}
+.athlete.list-item.active > .details-wrapper > * {
+  opacity: 1;
+}
+.athlete.list-item.active > .details-wrapper > .details {
+  top: 20%;
 }
 body {
   background: url('../res/usain-bolt.jpg') no-repeat top center fixed;
@@ -575,7 +617,7 @@ main > #athlete-list > * {
     box-shadow: inset 0 -1px 1px #000000;
   }
   .athlete.list-item > .pict-wrapper,
-  .athlete.list-item > .details {
+  .athlete.list-item > .details-wrapper {
     display: inline-block;
     vertical-align: top;
   }
@@ -591,10 +633,22 @@ main > #athlete-list > * {
     height: 100%;
     padding: 0;
   }
-  .athlete.list-item > .details {
+  .athlete.list-item > .details-wrapper {
     width: auto;
     height: auto;
     box-shadow: none;
+  }
+  .athlete.list-item.active > .pict-wrapper {
+    width: 11rem;
+    height: 11rem;
+    padding: 30px 0 30px 60px;
+  }
+  .athlete.list-item.active > .pict-wrapper > figure {
+    top: 0;
+  }
+  .athlete.list-item.active > .details-wrapper {
+    width: auto;
+    height: auto;
   }
 }
 /*# sourceMappingURL=style/main.min.css.map */

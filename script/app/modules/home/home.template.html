@@ -3,10 +3,15 @@
 		<div class="pict-wrapper">
 			<figure><img src="res/{{item.firstname}}-{{item.lastname}}.png" alt="Athlete pict"></figure>
 		</div>
-		<div class="details">
+		<div class="details-wrapper">
 			<h3>{{item.firstname}} {{item.lastname}}</h3>
-			<address>{{item.address}}</address>
-			<time>{{item.birthdate}}</time>
+
+			<div class="details">
+				<address>{{item.address}}</address>
+				<time>{{item.birthdate}}</time>
+				<p class="phone">{{item.phone}}</p>
+				<p class="desc">{{item.description}}</p>
+			</div>
 		</div>
 	</div>
 </section>

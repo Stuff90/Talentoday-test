@@ -26,7 +26,7 @@ define([], function () {
 				birthdate:'2014-1-1',
 				address:'Park avenue',
 				phone:'000-0000-000',
-				description:'Yohan Blake'
+				description:'Yohan Blake here is some description of all I can say about Yohan. He is very tall and many content can be written about him.'
 			},{
 				id:3,
 				firstname:'asafa',
