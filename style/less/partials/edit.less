@@ -1,0 +1,46 @@
+.ui-edit {
+	position:relative;
+	// display:inline-block;
+	.size(100%,auto);
+	> input, > textarea, > span {
+		.size(100%,25px);
+	}
+	> input, > textarea {
+		display:none;
+	}
+	> textarea {
+		height:auto;
+    	resize:vertical;
+	}
+	> span {
+		display:inline-block;
+		&:hover:after {
+			display:block;
+		}
+		&:after {
+			content:'';
+			.size(15px,15px);
+			position:absolute;
+			display:none;
+			top:0;
+			right:0;
+			background:url('../res/icon-edit-32x32.png') center center no-repeat;
+			background-size:cover;
+		}
+	}
+	&.multiline > span {
+		display:block;
+		height:auto;
+	}
+	&:hover {
+		cursor:pointer;
+	}
+	&.active {
+		> span {
+			display:none;
+		}
+		> input, > textarea {
+			display:inline-block;
+		}
+	}
+}
