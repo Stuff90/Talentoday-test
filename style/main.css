@@ -496,6 +496,56 @@ html {
 contributors :
   - @simonbernard90
 */
+.ui-edit {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.ui-edit > input,
+.ui-edit > textarea,
+.ui-edit > span {
+  width: 100%;
+  height: 25px;
+}
+.ui-edit > input,
+.ui-edit > textarea {
+  display: none;
+}
+.ui-edit > textarea {
+  height: auto;
+  resize: vertical;
+}
+.ui-edit > span {
+  display: inline-block;
+}
+.ui-edit > span:hover:after {
+  display: block;
+}
+.ui-edit > span:after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 0;
+  background: url('../res/icon-edit-32x32.png') center center no-repeat;
+  background-size: cover;
+}
+.ui-edit.multiline > span {
+  display: block;
+  height: auto;
+}
+.ui-edit:hover {
+  cursor: pointer;
+}
+.ui-edit.active > span {
+  display: none;
+}
+.ui-edit.active > input,
+.ui-edit.active > textarea {
+  display: inline-block;
+}
 .athlete.list-item {
   width: 20%;
   height: 100%;
@@ -541,20 +591,13 @@ contributors :
   background: #ffffff;
   position: relative;
   box-shadow: inset 0 1px 1px #000000;
-}
-.athlete.list-item > .details-wrapper > * {
-  opacity: 0;
-  -webkit-transition: all 500ms 100ms ease-in;
-  -moz-transition: all 500ms 100ms ease-in;
-  -o-transition: all 500ms 100ms ease-in;
-  transition: all 500ms 100ms ease-in;
+  overflow: hidden;
 }
 .athlete.list-item > .details-wrapper > h3 {
   -webkit-transition: all 400ms ease-in;
   -moz-transition: all 400ms ease-in;
   -o-transition: all 400ms ease-in;
   transition: all 400ms ease-in;
-  opacity: 1;
   text-transform: capitalize;
   text-align: center;
   position: absolute;
@@ -564,7 +607,12 @@ contributors :
   height: auto;
 }
 .athlete.list-item > .details-wrapper > .details {
-  top: 25%;
+  opacity: 0;
+  -webkit-transition: all 800ms 100ms ease-out;
+  -moz-transition: all 800ms 100ms ease-out;
+  -o-transition: all 800ms 100ms ease-out;
+  transition: all 800ms 100ms ease-out;
+  top: 100%;
   position: absolute;
   width: 100%;
   height: 100%;
