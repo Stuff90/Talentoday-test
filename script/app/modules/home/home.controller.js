@@ -3,24 +3,27 @@ contributors :
   - @simonbernard90
 */
 
-'use strict';
 
-define(['angular', 'services/athlete.service'], function (angular, i) {
+define([
+
+	'angular',
+	'services/athlete.service',
+	'./directives/edit.directive'
+
+	], function (angular, i) {
+	'use strict';
+
 	console.info('Home Controller');
 
-	return angular.module('app.home', [])
+	return angular.module('app.home', [
+			'app.edit'
+		])
 		.controller('HomeController', ['$scope', function ($scope) {
-			// $scope.scopedAppVersion = version;
 			$scope.items = i().all;
-			
+
 			$scope.open = function(item){
-				console.log(item);
 				$scope.selectedClass = $scope.items;
     			$scope.activeClass 	 = item.id;
 			};
-
-
-			// $scope.AthleteProvider = AthleteProvider
 		}]);
-
 });

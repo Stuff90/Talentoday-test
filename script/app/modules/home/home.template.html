@@ -7,10 +7,10 @@
 			<h3>{{item.firstname}} {{item.lastname}}</h3>
 
 			<div class="details">
-				<address>{{item.address}}</address>
-				<time>{{item.birthdate}}</time>
-				<p class="phone">{{item.phone}}</p>
-				<p class="desc">{{item.description}}</p>
+				<address><edit value="item.address"></edit></address>
+				<time><edit value="item.birthdate"></edit></time>
+				<p class="phone"><edit value="item.phone"></edit></p>
+				<div class="desc"><edit class="multiline" value="item.description"></edit></div>
 			</div>
 		</div>
 	</div>
