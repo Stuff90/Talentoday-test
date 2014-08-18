@@ -527,8 +527,8 @@ contributors :
   height: 15px;
   position: absolute;
   display: none;
-  top: 0;
-  right: 0;
+  top: 3px;
+  right: 3px;
   background: url('../res/icon-edit-32x32.png') center center no-repeat;
   background-size: cover;
 }
