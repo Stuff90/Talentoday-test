@@ -659,10 +659,16 @@ main > #athlete-list > * {
 }
 @media only screen and (min-width: 641px) and (max-width: 1180px) {
   .athlete.list-item {
+    -webkit-transition: all 500ms 800ms ease-in-out;
+    -moz-transition: all 500ms 800ms ease-in-out;
+    -o-transition: all 500ms 800ms ease-in-out;
+    transition: all 500ms 800ms ease-in-out;
+    position: relative;
     width: 100%;
-    height: 11rem;
+    height: 120px;
     background: #ffffff;
-    box-shadow: inset 0 -1px 1px #000000;
+    box-shadow: none;
+    border-bottom: solid 1px #000000;
   }
   .athlete.list-item > .pict-wrapper,
   .athlete.list-item > .details-wrapper {
@@ -670,33 +676,90 @@ main > #athlete-list > * {
     vertical-align: top;
   }
   .athlete.list-item > .pict-wrapper {
-    width: 11rem;
-    height: 11rem;
-    padding: 30px;
+    width: 20%;
+    height: 100%;
     background: transparent;
+    position: relative;
   }
   .athlete.list-item > .pict-wrapper > figure {
-    top: 0;
+    -webkit-transition: all 500ms 800ms ease-in-out;
+    -moz-transition: all 500ms 800ms ease-in-out;
+    -o-transition: all 500ms 800ms ease-in-out;
+    transition: all 500ms 800ms ease-in-out;
+    position: absolute;
+    max-width: 90px;
+    max-height: 90px;
+    padding: 0;
     width: 100%;
     height: 100%;
-    padding: 0;
-  }
-  .athlete.list-item > .details-wrapper {
-    width: auto;
-    height: auto;
-    box-shadow: none;
-  }
-  .athlete.list-item.active > .pict-wrapper {
-    width: 11rem;
-    height: 11rem;
-    padding: 30px 0 30px 60px;
-  }
-  .athlete.list-item.active > .pict-wrapper > figure {
+    bottom: 0;
+    margin: auto;
     top: 0;
   }
+  .athlete.list-item > .details-wrapper {
+    width: 80%;
+    height: 100%;
+    box-shadow: none;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .athlete.list-item > .details-wrapper > h3 {
+    line-height: 120px;
+    top: 0;
+    z-index: 1;
+  }
+  .athlete.list-item > .details-wrapper > .details {
+    width: 100%;
+    height: 100%;
+    left: 100%;
+    position: absolute;
+    background: #ffffff;
+    padding: 0 50px;
+    top: 0;
+  }
+  .athlete.list-item > .details-wrapper > .details:before {
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    background: -moz-linear-gradient(right, #ffffff 0%, rgba(255, 255, 255, 0) 90%);
+    background: -webkit-linear-gradient(right, #ffffff 0%, rgba(255, 255, 255, 0) 90%);
+    background: -o-linear-gradient(right, #ffffff 0%, rgba(255, 255, 255, 0) 90%);
+    background: -ms-linear-gradient(right, #ffffff 0%, rgba(255, 255, 255, 0) 90%);
+    background: linear-gradient(to left, #ffffff 0%, rgba(255, 255, 255, 0) 90%);
+    right: 100%;
+  }
+  .athlete.list-item > .details-wrapper > .details > *:first-child {
+    margin-top: 120px;
+  }
+  .athlete.list-item.active {
+    width: 100%;
+    height: 360px;
+  }
+  .athlete.list-item.active > .pict-wrapper {
+    width: 15%;
+    height: 100%;
+    margin-left: 4rem;
+  }
+  .athlete.list-item.active > .pict-wrapper > figure {
+    max-width: 150px;
+    max-height: 150px;
+  }
   .athlete.list-item.active > .details-wrapper {
-    width: auto;
-    height: auto;
+    width: 80%;
+    height: 100%;
+    left: 20%;
+  }
+  .athlete.list-item.active > .details-wrapper > h3 {
+    top: 0;
+  }
+  .athlete.list-item.active > .details-wrapper > .details {
+    width: 80%;
+    top: 0;
+    left: 20%;
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=style/main.min.css.map */

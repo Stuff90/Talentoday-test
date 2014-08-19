@@ -11,3 +11,11 @@
   -o-transition: @arguments;
   transition: @arguments;
 }
+
+.gradientToOpacity(@R, @G, @B) {
+	background: -moz-linear-gradient(right,  rgba( @R , @G , @B ,1) 0%,rgba( @R , @G , @B ,0) 90%);
+	background: -webkit-linear-gradient(right,  rgba( @R , @G , @B ,1) 0%,rgba( @R , @G , @B ,0) 90%);
+	background: -o-linear-gradient(right,  rgba( @R , @G , @B ,1) 0%,rgba( @R , @G , @B ,0) 90%);
+	background: -ms-linear-gradient(right,  rgba( @R , @G , @B ,1) 0%,rgba( @R , @G , @B ,0) 90%);
+	background: linear-gradient(to left,  rgba( @R , @G , @B ,1) 0%,rgba( @R , @G , @B ,0) 90%);
+}
