@@ -12,7 +12,7 @@
             vertical-align:top;
         }
         > .pict-wrapper {
-            .size(20%,100%);
+            .size(30%,100%);
             background:transparent;
             position:relative;
             > figure {
@@ -28,7 +28,7 @@
             }
         }
         > .details-wrapper {
-            .size(80%,100%);
+            .size();
             box-shadow:none;
             background:transparent;
             position:absolute;
@@ -39,6 +39,7 @@
                 line-height:120px;
                 top:0;
                 left:0;
+                margin-left:1rem;
                 z-index:1;
             }
             > .details {
@@ -63,24 +64,23 @@
         &.active {
             .size(100%,360px);
             > .pict-wrapper {
-                .size(25%,100%);
-                margin-left:4rem;
+                .size(120px,120px);
                 > figure {
-                    max-width:150px;
-                    max-height:150px;
+                    // max-width:150px;
+                    // max-height:150px;
                 }
             }
             > .details-wrapper {
-                .size(80%,100%);
-                left:20%;
+                .size();
+                left:0;
                 > h3 {
                     top:0;
                     left:7%;
                 }
                 > .details {
-                    width:80%;
+                    width:100%;
                     top:0;
-                    left:20%;
+                    left:0;
                     opacity:1;
                 }
             }
