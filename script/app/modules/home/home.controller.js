@@ -16,10 +16,12 @@ define([
 	console.info('Home Controller');
 
 	return angular.module('app.home', [
-			'app.edit'
+			'app.edit',
+			'app.AthleteService'
 		])
-		.controller('HomeController', ['$scope', function ($scope) {
-			$scope.items = i().all;
+		.controller('HomeController', ['$scope','AthleteService', function ($scope, AthleteService) {
+
+			$scope.items = AthleteService.all();
 
 			$scope.open = function(item){
 				$scope.selectedClass = $scope.items;

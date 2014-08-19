@@ -5,13 +5,11 @@ contributors :
 
 'use strict';
 
-define([], function () {
-	// return angular.module('AthleteService', []).factory('AthleteFactory', function() {
-	return function() {
+define([ 'angular','app' ], function (angular, app) {
 
-		var athlete = {};
+	return angular.module('app.AthleteService', []).factory( 'AthleteService', function() {
 
-		athlete.all = [{
+		var athletes = [{
 				id:1,
 				firstname:'usain',
 				lastname:'bolt',
@@ -54,18 +52,21 @@ define([], function () {
 			}
 		];
 
-		athlete.get = function(id){
-			if(!!id){
-				for (var i = athlete.all.length - 1; i >= 0; i--) {
-					if(athlete.all[i].id == id) return athlete.all[i];
-				};
-			} else {
-				return this.athletes;
+
+
+		return {
+			all:function(){
+				return athletes;
+			},
+			get:function(id){
+				if(!!id){
+					for (var i = athletes.length - 1; i >= 0; i--) {
+						if(athletes[i].id == id) return athletes[i];
+					};
+				} else {
+					return this.athletes;
+				}
 			}
-
-		}
-
-		return athlete;
-	};
-
+		};
+	});
 });
