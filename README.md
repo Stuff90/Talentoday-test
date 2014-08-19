@@ -6,4 +6,5 @@ Install project
 ```
 $ npm install
 $ bower install
+$ grunt prod
 ```
