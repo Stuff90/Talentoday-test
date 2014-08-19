@@ -664,6 +664,19 @@ main > #athlete-list > * {
   display: inline-block;
   vertical-align: top;
 }
+#github {
+  position: fixed;
+  width: 150px;
+  height: 150px;
+  top: 0;
+  right: 0;
+  background: url('../res/github.png') no-repeat top right;
+}
+#github > a {
+  width: 150px;
+  height: 150px;
+  display: block;
+}
 @media only screen and (min-width: 641px) and (max-width: 1180px) {
   .athlete.list-item {
     max-width: none;
